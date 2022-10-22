@@ -1,31 +1,63 @@
 [
     {
-        "semantic_expression": "some(semantic_expression_of_a_move)",
+        "semantic_expression": "request(chop_cucumber)",
         "visual_information": [
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "Some text to show if the image cannot be shown"
+                "value": "Chopped cucumber"
             },
             {
                 "attribute": "image",
                 "type": "image/jpeg",
-                "value": "https://some-image-url"
+                "value": "https://www.dreamstime.com/stock-images-chopped-cucumber-isolate-white-background-image31754604"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(chop_tomato)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Chopped tomato"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.dreamstime.com/stock-photo-chopped-tomato-bowl-close-up-image44383816"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(chop_green pepper)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Chopped green pepper"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.dreamstime.com/green-pepper-fruit-lies-cutting-board-next-to-knife-cooking-sliced-food-vegetarian-healthy-diet-cuisine-organic-image159179757"
             }
         ]
     },
     {
-        "semantic_expression": "another(semantic_expression_of_a_move)",
+        "semantic_expression": "request(chop_onion)",
         "visual_information": [
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "Another text to show if the image cannot be shown"
+                "value": "slised onion"
             },
             {
                 "attribute": "image",
                 "type": "image/jpeg",
-                "value": "https://another-image-url"
+                "value": "https://www.dreamstime.com/stock-photo-onion-chopped-red-garlic-image79775042"
             }
         ]
     }

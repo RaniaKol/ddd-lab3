@@ -1,90 +1,36 @@
 [
     {
-        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
-        "semantic_expression": "answer(example_predicate(individual_1))",
+        "current_plan_item": "findout(?set([goal(perform(french_omelette)), goal(perform(greek_salad))]))",
+        "semantic_expression": "request(french_omelette)",
         "alternative": {
             "visual_information": [
                 {
                     "attribute": "name",
                     "type": "text/plain",
-                    "value": "Some text to show on the button"
+                    "value": "French omelette"
                 },
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://some-image-url"
+                    "value": "https://www.seriouseats.com/classic-french-omelette-recipe"
                 }
             ]
         }
     },
     {
-        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
-        "semantic_expression": "answer(example_predicate(individual_2))",
+        "current_plan_item": "findout(?set([goal(perform(french_omelette)), goal(perform(greek_salad))]))",
+        "semantic_expression": "request(greek_salad)",
         "alternative": {
             "visual_information": [
                 {
                     "attribute": "name",
                     "type": "text/plain",
-                    "value": "Some other text to show on the button"
+                    "value": "Greek salad"
                 },
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://some-other-image-url"
-                }
-            ]
-        }
-    },
-    {
-        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
-        "semantic_expression": "answer(example_predicate(individual_3))",
-        "alternative": {
-            "visual_information": [
-                {
-                    "attribute": "name",
-                    "type": "text/plain",
-                    "value": "Another text to show on the button"
-                },
-                {
-                    "attribute": "image",
-                    "type": "image/jpeg",
-                    "value": "https://another-image-url"
-                }
-            ]
-        }
-    },
-    {
-        "current_plan_item": "findout(?set([goal(perform(example_action_1)), goal(perform(example_action_2))]))",
-        "semantic_expression": "request(example_action_1)",
-        "alternative": {
-            "visual_information": [
-                {
-                    "attribute": "name",
-                    "type": "text/plain",
-                    "value": "Button text"
-                },
-                {
-                    "attribute": "image",
-                    "type": "image/jpeg",
-                    "value": "https://image-url"
-                }
-            ]
-        }
-    },
-    {
-        "current_plan_item": "findout(?set([goal(perform(example_action_1)), goal(perform(example_action_2))]))",
-        "semantic_expression": "request(example_action_2)",
-        "alternative": {
-            "visual_information": [
-                {
-                    "attribute": "name",
-                    "type": "text/plain",
-                    "value": "Button text"
-                },
-                {
-                    "attribute": "image",
-                    "type": "image/jpeg",
-                    "value": "https://image-url"
+                    "value": "https://www.istockphoto.com/se/foto/greek-salad-gm108623209-13825445?phrase=greek%20salad"
                 }
             ]
         }

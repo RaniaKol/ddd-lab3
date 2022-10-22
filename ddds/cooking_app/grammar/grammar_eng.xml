@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  
+
+
+  <action name="french_omelette">
+    <one-of>
+      <item>french omelette</item>
+      <item>I want to make a french omelette</item>
+      <item>Tell me the recipe of the french omelette</item>
+      <item>How can I make a french omelette?</item>
+    </one-of>
+  </action>
+
+  <action name="greek_salad">
+    <one-of>
+      <item>greek salad</item>
+      <item>I want to make a greek salad</item>
+      <item>Tell me the recipe of the greek salad</item>
+      <item> How can I make a greek salad?</item>
+    </one-of>
+  </action>
+
+  
+
+  <question speaker="user" predicate="ingr_am" type="wh_question">
+    <one-of>
+      <item>how much <slot predicate="ingr_type"/> should I use?</item>
+      <item>how much <slot predicate="ingr_type"/> does it need?</item>
+      <item>what is the amount of the <slot predicate="ingr_type"/>?</item>
+      <item>how much <slot predicate="ingr_type"/> should I use?</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="extra_ingr" type="wh_question">
+    <one-of>
+      <item>Do you suggest adding any other ingredients?</item>
+      <item>Could you help me suggesting to add other ingredients to the recipe?</item>
+      <item>What would be other suitable ingredients to the recipe?</item>
+      <item>I would love to add extra ingredients to the recipe, do you have any suggestions?</item>
+    </one-of>
+  </question>
+
+  <individual name="omelette_finished">Amazing! You have finished preparing a French omelette. Bon appétit!</individual>
+  <individual name="salad_finished">Amazing! now you have the most delicious caesar salad ever. Bon appétit!</individual>
+  <individual name="omelette">omelette</individual>
+  <individual name="salad">salad</individual>
+  <individual name="butter">oil</individual>
+  <individual name="butter_amount">one tablespoon of butter or oil is enough</individual>
+  <individual name="vegetables">vegetables</individual>
+  <individual name="vegetables_amount">you will need one tomato, half onion, half pepper and a whole cucumber</individual>
+  <individual name="vinegar">vinegar</individual>
+  <individual name="vinegar_amount">two tablespoons of vinegar is enough</individual>
+  <individual name="feta_cheese">feta cheese</individual>
+  <individual name="feta_cheese_amount">you will need half cup of crumbled feta</individual>
+
+  <individual name="olives">
+    <one-of>
+      <item>olives</item>
+      <item>green olives</item>
+    </one-of>
+  </individual>
+  <individual name="olives_amount">Olives are optional,but you can add some for extra taste</individual>
+
+  <individual name="oil">
+    <one-of>
+      <item>oil</item>
+      <item>extra virgin oil</item>
+    </one-of>
+  </individual>
+  <individual name="oil_amount">you should use half deciliter of oil</individual>
+
+  <individual name="extra_omelette_ingr" >For extra taste you can add some red pepper, tomato and gouda cheese.</individual>
+  <individual name="extra_salad_ingr" >Mint and oregano gives a really good taste in the salad</individual>
+
+  
+</grammar>

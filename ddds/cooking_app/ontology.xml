@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="CookingAppOntology">
+
+    <sort name="ready" />
+    <sort name="recipe" />
+    <sort name="ingredient"/>
+    <sort name="amount"/>
+
+    <action name="french_omelette" />
+    <action name="stir_eggs" />
+    <action name="greek_salad" />
+    <action name="chop_tomato" />
+    <action name="chop_cucumber" />
+    <action name="chop_green_pepper" />
+    <action name="chop_onion" />
+    
+
+    <predicate name="finished" sort="ready"/>
+    <predicate name="the_recipe" sort="recipe"/>
+    <predicate name="ingr_type" sort="ingredient" />
+    <predicate name="extra_ingr" sort="ingredient" />
+    <predicate name="ingr_am" sort="amount" />
+    <individual name="omelette_finished" sort="ready" />
+    <individual name="salad_finished" sort="ready" />
+    <individual name="omelette" sort="recipe" />
+    <individual name="salad" sort="recipe" />
+    <individual name="butter" sort="ingredient" />
+    <individual name="butter_amount" sort="amount" />
+    <individual name="vinegar" sort="ingredient" />
+    <individual name="vinegar_amount" sort="amount" />
+    <individual name="feta_cheese" sort="ingredient" />
+    <individual name="feta_cheese_amount" sort="amount" />
+    <individual name="vegetables" sort="ingredient" />
+    <individual name="vegetables_amount" sort="amount" />
+    <individual name="olives" sort="ingredient" />
+    <individual name="olives_amount" sort="amount" />
+    <individual name="oil" sort="ingredient" />
+    <individual name="oil_amount" sort="amount" />
+    <individual name="extra_omelette_ingr" sort="ingredient" />
+    <individual name="extra_salad_ingr" sort="ingredient" />
+
+</ontology>

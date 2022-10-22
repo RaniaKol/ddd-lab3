@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="CookingAppDomain" is_super_domain="true">
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="alt_question">
+        <alt><perform action="french_omelette" /></alt>
+        <alt><perform action="greek_salad" /></alt>
+      </findout>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="french_omelette">
+    <plan>
+      <assume_shared>
+        <proposition predicate="the_recipe" value="omelette" />
+      </assume_shared>
+      <get_done action="crack_eggs" />
+      <get_done action="add_butter"/> 
+      <get_done action="stir_eggs" />
+      <get_done action="roll_omelette" />
+      <get_done action="warm_plate" />
+      <get_done action="serve" />
+      <inform>
+        <proposition predicate="finished" value="omelette_finished" />
+      </inform>
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="stir_eggs">
+    <plan>
+      <get_done action="hold_whisk" />
+      <get_done action="sides" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="greek_salad">
+    <plan>
+      <assume_shared>
+        <proposition predicate="the_recipe" value="salad" />
+      </assume_shared>
+      <get_done action="chop_cucumber" />
+      <get_done action="chop_tomato" />
+      <get_done action="chop_green_pepper" />
+      <get_done action="chop_onion" />
+      <get_done action="add_feta_cheese" />
+      <get_done action="add_oil" />
+      <get_done action="add_vinegar" />
+      <get_done action="mix_all" />
+      <inform>
+        <proposition predicate="finished" value="salad_finished" />
+      </inform>
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="chop_cucumber">
+    <plan>
+      <get_done action="big_cuts" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="chop_tomato">
+    <plan>
+      <get_done action="big_cuts" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="chop_green_pepper">
+    <plan>
+      <get_done action="big_cuts" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="chop_onion">
+    <plan>
+      <get_done action="small_cuts" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="ingr_am">
+    <plan>
+      <bind type="wh_question" predicate="ingr_type" />
+
+      <if>
+        <proposition predicate="the_recipe" value="omelette" />
+        <then>
+          <if>
+            <proposition predicate="ingr_type" value="butter" />
+              <then>
+                <inform>
+                  <proposition predicate="ingr_am" value="butter_amount" />
+                </inform>
+              </then>
+          </if>
+        </then>
+        
+        <else>
+          <if>
+            <proposition predicate="ingr_type" value="oil" />
+              <then>
+                <inform>
+                  <proposition predicate="ingr_am" value="oil_amount" />
+                </inform>
+              </then>
+            
+              <else>
+              <if>
+                <proposition predicate="ingr_type" value="olives" />
+                <then>
+                  <inform>
+                    <proposition predicate="ingr_am" value="olives_amount" />
+                  </inform>
+                </then>
+                
+                <else>
+                  <if>
+                    <proposition predicate="ingr_type" value="vegetables" />
+                    <then>
+                      <inform>
+                        <proposition predicate="ingr_am" value="vegetables_amount" />
+                      </inform>
+                    </then>
+
+                    <else>
+                      <if>
+                        <proposition predicate="ingr_type" value="vinegar" />
+                        <then>
+                          <inform>
+                            <proposition predicate="ingr_am" value="vinegar_amount" />
+                          </inform>
+                        </then>
+                        
+                        <else>
+                          <if>
+                            <proposition predicate="ingr_type" value="feta_cheese" />
+                            <then>
+                              <inform>
+                                <proposition predicate="ingr_am" value="feta_cheese_amount" />
+                              </inform>
+                            </then>
+                          </if>
+                        </else>
+                      </if>
+                    </else>
+                  </if>
+                </else>
+              </if>
+            </else>
+          </if> 
+        </else>
+      </if>
+  </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="extra_ingr">
+    <plan>
+      <if>
+        <proposition predicate="the_recipe" value="omelette" />
+        <then>
+          <inform>
+            <proposition predicate="extra_ingr" value="extra_omelette_ingr" />
+          </inform>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="extra_ingr" value="extra_salad_ingr" />
+          </inform>
+        </else>
+      </if>
+    </plan>
+  </goal>
+
+
+</domain>
