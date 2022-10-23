@@ -66,42 +66,32 @@ nlu:
 
 - intent: question::ingr_am
   examples: |
-    - how much [For extra taste you can add some red pepper, tomato and gouda cheese.]{"entity": "sort.ingredient", "value": "individual.extra_omelette_ingr"} should I use?
-    - how much [Mint and oregano gives a really good taste in the salad]{"entity": "sort.ingredient", "value": "individual.extra_salad_ingr"} should I use?
-    - how much [extra virgin oil]{"entity": "sort.ingredient", "value": "individual.oil"} should I use?
-    - how much [feta cheese]{"entity": "sort.ingredient", "value": "individual.feta_cheese"} should I use?
-    - how much [green olives]{"entity": "sort.ingredient", "value": "individual.olives"} should I use?
-    - how much [oil]{"entity": "sort.ingredient", "value": "individual.butter"} should I use?
-    - how much [oil]{"entity": "sort.ingredient", "value": "individual.oil"} should I use?
-    - how much [olives]{"entity": "sort.ingredient", "value": "individual.olives"} should I use?
-    - how much [vegetables]{"entity": "sort.ingredient", "value": "individual.vegetables"} should I use?
-    - how much [vinegar]{"entity": "sort.ingredient", "value": "individual.vinegar"} should I use?
-    - how much [For extra taste you can add some red pepper, tomato and gouda cheese.]{"entity": "sort.ingredient", "value": "individual.extra_omelette_ingr"} does it need?
-    - how much [Mint and oregano gives a really good taste in the salad]{"entity": "sort.ingredient", "value": "individual.extra_salad_ingr"} does it need?
-    - how much [extra virgin oil]{"entity": "sort.ingredient", "value": "individual.oil"} does it need?
-    - how much [feta cheese]{"entity": "sort.ingredient", "value": "individual.feta_cheese"} does it need?
-    - how much [green olives]{"entity": "sort.ingredient", "value": "individual.olives"} does it need?
-    - how much [oil]{"entity": "sort.ingredient", "value": "individual.butter"} does it need?
-    - how much [oil]{"entity": "sort.ingredient", "value": "individual.oil"} does it need?
-    - how much [olives]{"entity": "sort.ingredient", "value": "individual.olives"} does it need?
-    - how much [vegetables]{"entity": "sort.ingredient", "value": "individual.vegetables"} does it need?
-    - how much [vinegar]{"entity": "sort.ingredient", "value": "individual.vinegar"} does it need?
+    - how much [For extra taste you can add some red pepper, tomato and gouda cheese.]{"entity": "sort.ingredient", "value": "individual.extra_omelette_ingr"} do I need to use?
+    - how much [Mint and oregano gives a really good taste in the salad]{"entity": "sort.ingredient", "value": "individual.extra_salad_ingr"} do I need to use?
+    - how much [butter]{"entity": "sort.ingredient", "value": "individual.butter"} do I need to use?
+    - how much [extra virgin oil]{"entity": "sort.ingredient", "value": "individual.oil"} do I need to use?
+    - how much [feta cheese]{"entity": "sort.ingredient", "value": "individual.feta_cheese"} do I need to use?
+    - how much [green olives]{"entity": "sort.ingredient", "value": "individual.olives"} do I need to use?
+    - how much [oil]{"entity": "sort.ingredient", "value": "individual.oil"} do I need to use?
+    - how much [olives]{"entity": "sort.ingredient", "value": "individual.olives"} do I need to use?
+    - how much [vegetables]{"entity": "sort.ingredient", "value": "individual.vegetables"} do I need to use?
+    - how much [vinegar]{"entity": "sort.ingredient", "value": "individual.vinegar"} do I need to use?
     - what is the amount of the [For extra taste you can add some red pepper, tomato and gouda cheese.]{"entity": "sort.ingredient", "value": "individual.extra_omelette_ingr"}?
     - what is the amount of the [Mint and oregano gives a really good taste in the salad]{"entity": "sort.ingredient", "value": "individual.extra_salad_ingr"}?
+    - what is the amount of the [butter]{"entity": "sort.ingredient", "value": "individual.butter"}?
     - what is the amount of the [extra virgin oil]{"entity": "sort.ingredient", "value": "individual.oil"}?
     - what is the amount of the [feta cheese]{"entity": "sort.ingredient", "value": "individual.feta_cheese"}?
     - what is the amount of the [green olives]{"entity": "sort.ingredient", "value": "individual.olives"}?
-    - what is the amount of the [oil]{"entity": "sort.ingredient", "value": "individual.butter"}?
     - what is the amount of the [oil]{"entity": "sort.ingredient", "value": "individual.oil"}?
     - what is the amount of the [olives]{"entity": "sort.ingredient", "value": "individual.olives"}?
     - what is the amount of the [vegetables]{"entity": "sort.ingredient", "value": "individual.vegetables"}?
     - what is the amount of the [vinegar]{"entity": "sort.ingredient", "value": "individual.vinegar"}?
     - how much [For extra taste you can add some red pepper, tomato and gouda cheese.]{"entity": "sort.ingredient", "value": "individual.extra_omelette_ingr"} should I use?
     - how much [Mint and oregano gives a really good taste in the salad]{"entity": "sort.ingredient", "value": "individual.extra_salad_ingr"} should I use?
+    - how much [butter]{"entity": "sort.ingredient", "value": "individual.butter"} should I use?
     - how much [extra virgin oil]{"entity": "sort.ingredient", "value": "individual.oil"} should I use?
     - how much [feta cheese]{"entity": "sort.ingredient", "value": "individual.feta_cheese"} should I use?
     - how much [green olives]{"entity": "sort.ingredient", "value": "individual.olives"} should I use?
-    - how much [oil]{"entity": "sort.ingredient", "value": "individual.butter"} should I use?
     - how much [oil]{"entity": "sort.ingredient", "value": "individual.oil"} should I use?
     - how much [olives]{"entity": "sort.ingredient", "value": "individual.olives"} should I use?
     - how much [vegetables]{"entity": "sort.ingredient", "value": "individual.vegetables"} should I use?
@@ -109,14 +99,13 @@ nlu:
 
 - intent: question::extra_ingr
   examples: |
-    - Do you suggest adding any other ingredients?
-    - Could you help me suggesting to add other ingredients to the recipe?
-    - What would be other suitable ingredients to the recipe?
-    - I would love to add extra ingredients to the recipe, do you have any suggestions?
+    - Do you suggest any other ingredients?
+    - Could you suggest me to add other ingredients?
+    - I would like to add extra ingredients to the recipe, do you have any suggestions?
 
 - intent: answer
   examples: |
-    - [oil]{"entity": "sort.ingredient", "value": "individual.butter"}
+    - [butter]{"entity": "sort.ingredient", "value": "individual.butter"}
     - [vinegar]{"entity": "sort.ingredient", "value": "individual.vinegar"}
     - [feta cheese]{"entity": "sort.ingredient", "value": "individual.feta_cheese"}
     - [vegetables]{"entity": "sort.ingredient", "value": "individual.vegetables"}
@@ -126,9 +115,9 @@ nlu:
     - [extra virgin oil]{"entity": "sort.ingredient", "value": "individual.oil"}
     - [For extra taste you can add some red pepper, tomato and gouda cheese.]{"entity": "sort.ingredient", "value": "individual.extra_omelette_ingr"}
     - [Mint and oregano gives a really good taste in the salad]{"entity": "sort.ingredient", "value": "individual.extra_salad_ingr"}
-    - [Amazing! You have finished preparing a French omelette. Bon appétit!]{"entity": "sort.ready", "value": "individual.omelette_finished"}
-    - [Amazing! now you have the most delicious caesar salad ever. Bon appétit!]{"entity": "sort.ready", "value": "individual.salad_finished"}
-    - [one tablespoon of butter or oil is enough]{"entity": "sort.amount", "value": "individual.butter_amount"}
+    - [Amazing!French omelette is ready. Enjoy!]{"entity": "sort.ready", "value": "individual.omelette_finished"}
+    - [Great job! Greek salad is ready. Enjoy!]{"entity": "sort.ready", "value": "individual.salad_finished"}
+    - [one tablespoon of butter is enough]{"entity": "sort.amount", "value": "individual.butter_amount"}
     - [two tablespoons of vinegar is enough]{"entity": "sort.amount", "value": "individual.vinegar_amount"}
     - [you will need half cup of crumbled feta]{"entity": "sort.amount", "value": "individual.feta_cheese_amount"}
     - [you will need one tomato, half onion, half pepper and a whole cucumber]{"entity": "sort.amount", "value": "individual.vegetables_amount"}
@@ -136,14 +125,14 @@ nlu:
     - [you should use half deciliter of oil]{"entity": "sort.amount", "value": "individual.oil_amount"}
     - [omelette]{"entity": "sort.recipe", "value": "individual.omelette"}
     - [salad]{"entity": "sort.recipe", "value": "individual.salad"}
-    - yes [oil]{"entity": "sort.ingredient", "value": "individual.butter"}
-    - yes [Amazing! You have finished preparing a French omelette. Bon appétit!]{"entity": "sort.ready", "value": "individual.omelette_finished"}
+    - yes [butter]{"entity": "sort.ingredient", "value": "individual.butter"}
+    - yes [Amazing!French omelette is ready. Enjoy!]{"entity": "sort.ready", "value": "individual.omelette_finished"}
     - no [vinegar]{"entity": "sort.ingredient", "value": "individual.vinegar"}
-    - no [Amazing! now you have the most delicious caesar salad ever. Bon appétit!]{"entity": "sort.ready", "value": "individual.salad_finished"}
+    - no [Great job! Greek salad is ready. Enjoy!]{"entity": "sort.ready", "value": "individual.salad_finished"}
 
 - intent: answer_negation
   examples: |
-    - not [oil]{"entity": "sort.ingredient", "value": "individual.butter"}
+    - not [butter]{"entity": "sort.ingredient", "value": "individual.butter"}
     - not [vinegar]{"entity": "sort.ingredient", "value": "individual.vinegar"}
     - not [feta cheese]{"entity": "sort.ingredient", "value": "individual.feta_cheese"}
     - not [vegetables]{"entity": "sort.ingredient", "value": "individual.vegetables"}
@@ -153,9 +142,9 @@ nlu:
     - not [extra virgin oil]{"entity": "sort.ingredient", "value": "individual.oil"}
     - not [For extra taste you can add some red pepper, tomato and gouda cheese.]{"entity": "sort.ingredient", "value": "individual.extra_omelette_ingr"}
     - not [Mint and oregano gives a really good taste in the salad]{"entity": "sort.ingredient", "value": "individual.extra_salad_ingr"}
-    - not [Amazing! You have finished preparing a French omelette. Bon appétit!]{"entity": "sort.ready", "value": "individual.omelette_finished"}
-    - not [Amazing! now you have the most delicious caesar salad ever. Bon appétit!]{"entity": "sort.ready", "value": "individual.salad_finished"}
-    - not [one tablespoon of butter or oil is enough]{"entity": "sort.amount", "value": "individual.butter_amount"}
+    - not [Amazing!French omelette is ready. Enjoy!]{"entity": "sort.ready", "value": "individual.omelette_finished"}
+    - not [Great job! Greek salad is ready. Enjoy!]{"entity": "sort.ready", "value": "individual.salad_finished"}
+    - not [one tablespoon of butter is enough]{"entity": "sort.amount", "value": "individual.butter_amount"}
     - not [two tablespoons of vinegar is enough]{"entity": "sort.amount", "value": "individual.vinegar_amount"}
     - not [you will need half cup of crumbled feta]{"entity": "sort.amount", "value": "individual.feta_cheese_amount"}
     - not [you will need one tomato, half onion, half pepper and a whole cucumber]{"entity": "sort.amount", "value": "individual.vegetables_amount"}
