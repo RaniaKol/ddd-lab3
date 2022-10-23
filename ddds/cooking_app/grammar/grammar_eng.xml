@@ -83,8 +83,7 @@
 
   <question speaker="user" predicate="ingr_am" type="wh_question">
     <one-of>
-      <item>how much <slot predicate="ingr_type"/> should I use?</item>
-      <item>how much <slot predicate="ingr_type"/> does it need?</item>
+      <item>how much <slot predicate="ingr_type"/> do I need to use?</item>
       <item>what is the amount of the <slot predicate="ingr_type"/>?</item>
       <item>how much <slot predicate="ingr_type"/> should I use?</item>
     </one-of>
@@ -92,10 +91,9 @@
 
   <question speaker="user" predicate="extra_ingr" type="wh_question">
     <one-of>
-      <item>Do you suggest adding any other ingredients?</item>
-      <item>Could you help me suggesting to add other ingredients to the recipe?</item>
-      <item>What would be other suitable ingredients to the recipe?</item>
-      <item>I would love to add extra ingredients to the recipe, do you have any suggestions?</item>
+      <item>Do you suggest any other ingredients?</item>
+      <item>Could you suggest me to add other ingredients?</item>
+      <item>I would like to add extra ingredients to the recipe, do you have any suggestions?</item>
     </one-of>
   </question>
 
@@ -105,8 +103,6 @@
   <individual name="salad_finished">Great job! Greek salad is ready. Enjoy!</individual>
   <individual name="omelette">omelette</individual>
   <individual name="salad">salad</individual>
-  <individual name="butter">butter</individual>
-  <individual name="butter_amount">one tablespoon of butter is enough</individual>
   <individual name="vegetables">vegetables</individual>
   <individual name="vegetables_amount">you will need one tomato, half onion, half pepper and a whole cucumber</individual>
   <individual name="vinegar">vinegar</individual>
@@ -122,6 +118,13 @@
     </one-of>
   </individual>
   <individual name="olives_amount">Olives are optional,but you can add some for extra taste</individual>
+
+  <individual name="butter">
+    <one-of>
+      <item>butter</item>
+    </one-of>
+  </individual>
+  <individual name="butter_amount">one tablespoon of butter is enough</individual>
   
 
   <individual name="oil">

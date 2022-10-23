@@ -22,6 +22,7 @@
     <predicate name="ingr_type" sort="ingredient" />
     <predicate name="extra_ingr" sort="ingredient" />
     <predicate name="ingr_am" sort="amount" />
+    
     <individual name="omelette_finished" sort="ready" />
     <individual name="salad_finished" sort="ready" />
     <individual name="omelette" sort="recipe" />
