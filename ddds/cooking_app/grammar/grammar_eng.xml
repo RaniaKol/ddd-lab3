@@ -33,12 +33,49 @@
     </one-of>
   </action>
 
+  <action name="stir_eggs">
+    <one-of>
+      <item>stir eggs</item>
+      <item>blend eggs</item>
+    </one-of>
+  </action>
+
   <action name="greek_salad">
     <one-of>
       <item>greek salad</item>
       <item>I want to make a greek salad</item>
       <item>Tell me the recipe of the greek salad</item>
       <item> How can I make a greek salad?</item>
+    </one-of>
+  </action>
+
+  <action name="chop_cucumber">
+    <one-of>
+      <item>cucumber</item>
+      <item>chopped cucumber</item>
+    </one-of>
+  </action>
+  
+  <action name="chop_tomato">
+    <one-of>
+      <item>tomato</item>
+      <item>chopped tomato</item>
+    </one-of>
+  </action>
+
+  <action name="chop_green_pepper">
+    <one-of>
+      <item>green pepper</item>
+      <item>green bell pepper</item>
+      <item> chopped green pepper</item>
+    </one-of>
+  </action>
+
+  <action name="chop_onion">
+    <one-of>
+      <item>onion</item>
+      <item>red onion</item>
+      <item> slised onion</item>
     </one-of>
   </action>
 
@@ -62,12 +99,14 @@
     </one-of>
   </question>
 
-  <individual name="omelette_finished">Amazing! You have finished preparing a French omelette. Bon appétit!</individual>
-  <individual name="salad_finished">Amazing! now you have the most delicious caesar salad ever. Bon appétit!</individual>
+
+
+  <individual name="omelette_finished">Amazing!French omelette is ready. Enjoy!</individual>
+  <individual name="salad_finished">Great job! Greek salad is ready. Enjoy!</individual>
   <individual name="omelette">omelette</individual>
   <individual name="salad">salad</individual>
-  <individual name="butter">oil</individual>
-  <individual name="butter_amount">one tablespoon of butter or oil is enough</individual>
+  <individual name="butter">butter</individual>
+  <individual name="butter_amount">one tablespoon of butter is enough</individual>
   <individual name="vegetables">vegetables</individual>
   <individual name="vegetables_amount">you will need one tomato, half onion, half pepper and a whole cucumber</individual>
   <individual name="vinegar">vinegar</individual>
@@ -75,6 +114,7 @@
   <individual name="feta_cheese">feta cheese</individual>
   <individual name="feta_cheese_amount">you will need half cup of crumbled feta</individual>
 
+  
   <individual name="olives">
     <one-of>
       <item>olives</item>
@@ -82,6 +122,7 @@
     </one-of>
   </individual>
   <individual name="olives_amount">Olives are optional,but you can add some for extra taste</individual>
+  
 
   <individual name="oil">
     <one-of>

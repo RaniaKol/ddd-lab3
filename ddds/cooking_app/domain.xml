@@ -19,7 +19,6 @@
       <get_done action="add_butter"/> 
       <get_done action="stir_eggs" />
       <get_done action="roll_omelette" />
-      <get_done action="warm_plate" />
       <get_done action="serve" />
       <inform>
         <proposition predicate="finished" value="omelette_finished" />

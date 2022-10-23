@@ -1,6 +1,28 @@
 version: "2.0"
 
 nlu:
+- intent: action::chop_cucumber
+  examples: |
+    - cucumber
+    - chopped cucumber
+
+- intent: action::chop_green_pepper
+  examples: |
+    - green pepper
+    - green bell pepper
+    - chopped green pepper
+
+- intent: action::chop_onion
+  examples: |
+    - onion
+    - red onion
+    - slised onion
+
+- intent: action::chop_tomato
+  examples: |
+    - tomato
+    - chopped tomato
+
 - intent: action::french_omelette
   examples: |
     - french omelette
@@ -14,6 +36,11 @@ nlu:
     - I want to make a greek salad
     - Tell me the recipe of the greek salad
     - How can I make a greek salad?
+
+- intent: action::stir_eggs
+  examples: |
+    - stir eggs
+    - blend eggs
 
 - intent: question::ingr_am
   examples: |

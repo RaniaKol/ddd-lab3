@@ -1,4 +1,10 @@
 [
+    
+    {
+        "match": "greet",
+        "utterance": "Welcome! Today we wil cook a french omelette or a greek salad. "
+    },
+    
     {
         "match":"ask(?set([goal(perform(french_omelette)), goal(perform(greek_salad))]))",
         "utterance": "Do you want to make a french omelette or a greek salad?"
@@ -30,7 +36,7 @@
     },
 
     {
-        "match": "request(warm_plate)",
+        "match": "request(serve)",
         "utterance": "Transfer to a warm plate and serve."
     },
 
